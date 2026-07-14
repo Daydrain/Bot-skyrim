@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compiler Papyrus",
+            "type": "shell",
+            "command": "papyrus.exe", 
+            "args": [
+                "compile",
+                "-nocache",
+                "-i", "${workspaceFolder}\\Mon mod\\Source\\Scripts",
+                "-h","D:\\Program Files (x86)\\Steam\\steamapps\\common\\Skyrim Special Edition\\Data\\Scripts\\Source",
+                "-o", "${workspaceFolder}\\Mon mod\\Scripts"
+            ],
+            "options": {
+                "cwd": "D:\\programation\\outil\\papyrus-compiler"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            }
+        }
+    ]
+}
